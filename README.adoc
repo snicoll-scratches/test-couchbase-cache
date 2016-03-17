@@ -1,0 +1,14 @@
+= Spring Couchbase cache support
+
+This sample project demonstrates how to use caching with Couchbase. To run
+this simple demo you need couchbase running on your machine with two buckets
+named `default` and `public` and no password.
+
+Of course, feel free to update the configuration to better suit your need.
+
+This demo uses two caches:
+
+* `foos` is created on-the-fly using the `default` bucket (i.e. the one that
+was auto-configured by Spring Boot)
+* `bars` is an explicit cache created via a `CacheManagerCustomizer` that
+works with another bucket
